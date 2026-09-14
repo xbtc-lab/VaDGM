@@ -1,0 +1,29 @@
+# Figure 4：左右双子图；a 时间箱与冲突/安全，b NFE 与严格命中率。
+# 实验及可视化定义见 docs/10_Figure4_有限步长机制与效率实验设计.md。
+# 固定 Q80 已训练模型，不启动训练；只改变 delta_s。
+experiment: figure4
+condition_prefix: delta_s=
+seeds: [2027, 2028, 2029]
+delta_s: [0.5, 0.25, 0.125, 0.0625]
+
+settings:
+  samples: 10000
+  batch_size: 256  # 与复用的 Table 1 三个 VaDGM 运行一致。
+  device: cuda
+  overwrite: false
+
+paths:
+  base_checkpoint: artifacts/base/best.pt
+  guidance_checkpoint: artifacts/guidance/logp_q80_best.pt
+  vocabulary: data/processed/zinc100k_v1/atom_vocabulary.json
+  base_config: configs/base.yaml
+  guidance_config: configs/guidance.yaml
+  sampler_config: configs/sampling.yaml
+  output_dir: results/runs/paper/figure4
+
+reuse:
+  # delta_s=0.25 直接复用 Table 1 的完整 VaDGM 三个 seed。
+  delta_s: 0.25
+  output_pattern: results/runs/paper/table1/vadgm_q80_seed{seed}.json
+  experiment: table1
+  condition: q80

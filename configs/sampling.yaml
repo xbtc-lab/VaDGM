@@ -1,0 +1,14 @@
+seed: 2027
+delta_s: 0.25
+samples: 10000
+batch_size: 128
+device: cuda
+record_event_plan: false
+record_event_trace: false
+record_joint_conflict: true
+terminal_reachability:
+  enabled: true
+  # 局部条件并非全局充分；若所有类别均被删除，则回退到容量 gate 并记录放松次数。
+  relax_on_empty: true
+  # 将 atom token 推迟到全部 bond 负载确定后再提交，减少过早固定 H/q 导致的 under-valence。
+  defer_atom_commit: true

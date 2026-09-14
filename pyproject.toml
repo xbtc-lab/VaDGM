@@ -1,0 +1,40 @@
+[project]
+name = "vadgm"
+version = "0.1.0"
+description = "Valence-supported discrete guidance matching for molecular graph generation"
+requires-python = ">=3.11,<3.12"
+dependencies = [
+    "matplotlib>=3.8,<4",
+    "numpy>=1.26,<2",
+    "pyyaml>=6.0,<7",
+    "rdkit-pypi==2022.9.5",
+    "torch==2.11.0",
+    "tqdm>=4.66,<5",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+figures = [
+    "pymupdf>=1.24,<2",
+    "svglib>=1.5,<2",
+]
+
+[project.scripts]
+vadgm = "vadgm.cli:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = {"" = "."}
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["vadgm*"]
+
+[tool.pytest.ini_options]
+addopts = "-ra"
+testpaths = ["tests"]
+pythonpath = ["."]
+cache_dir = ".pytest_cache"

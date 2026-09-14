@@ -1,0 +1,2 @@
+experiment,condition,method,target,runs,seeds,samples_total,mean_logp_mean,mean_logp_std,mean_logp_ci95,property_mae_mean,property_mae_std,property_mae_ci95,property_hit_percent_mean,property_hit_percent_std,property_hit_percent_ci95,strict_vthr_percent_mean,strict_vthr_percent_std,strict_vthr_percent_ci95
+table1,q80,VaDGM,3.349184000000002,3,3,30000,2.9641256186666687,0.002150512835884496,0.0053426012056768165,1.159833060666666,0.00718560392187734,0.017851470372995185,27.63,0.15524174696259957,0.38567300350599093,25.46666666666667,0.12503332889007365,0.3106250762754209

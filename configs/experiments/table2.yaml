@@ -1,0 +1,19 @@
+# Table 2 累计消融：Table 1 已包含三行，本实验只补 no-terminal-atom-phase。
+experiment: table2
+condition: q80
+seeds: [2027, 2028, 2029]
+
+settings:
+  samples: 10000
+  batch_size: 128
+  device: cuda
+  overwrite: false
+
+paths:
+  base_checkpoint: artifacts/base/best.pt
+  guidance_checkpoint: artifacts/guidance/logp_q80_best.pt
+  vocabulary: data/processed/zinc100k_v1/atom_vocabulary.json
+  base_config: configs/base.yaml
+  guidance_config: configs/guidance.yaml
+  sampler_config: configs/sampling_no_terminal_phase.yaml
+  output_dir: results/runs/paper/table2

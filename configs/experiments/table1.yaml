@@ -1,0 +1,33 @@
+# Table 1 正式实验配置：只控制采样，不会重新训练 Base 或 Guidance。
+experiment: table1
+condition: q80
+
+# 论文正式结果使用同一组冻结模型参数，仅改变采样随机种子。
+seeds: [2027, 2028, 2029]
+
+settings:
+  # 每个方法、每个 seed 生成的分子数量；旧的 256 样本 pilot 不再用于正式表格。
+  samples: 10000
+  # Vanilla DGM 的离散扩散名义步数；VaDGM 的实际 NFE 由非空时间箱决定。
+  steps: 128
+  # GPU 上一次处理的分子数量，不改变实验统计口径。
+  batch_size: 256
+  # 使用 CUDA；若只做 CPU 调试可改为 cpu。
+  device: cuda
+  # false：已有同名完整 JSON 时直接复用；需要强制重采样时改为 true。
+  overwrite: false
+
+paths:
+  # 以下 checkpoint 必须是同一份冻结 Base/Guidance；不在本实验中重新训练。
+  base_checkpoint: artifacts/base/best.pt
+  guidance_checkpoint: artifacts/guidance/logp_q80_best.pt
+  vocabulary: data/processed/zinc100k_v1/atom_vocabulary.json
+  base_config: configs/base.yaml
+  guidance_config: configs/guidance.yaml
+  output_dir: results/runs/paper/table1
+
+sampler_configs:
+  # Vanilla DGM 不读取采样 gate 配置，因此单独由 sample-guided 执行。
+  capacity_only: configs/sampling_capacity_only.yaml
+  # 完整 VaDGM：dynamic capacity gate + terminal gate + terminal atom phase。
+  vadgm: configs/sampling.yaml

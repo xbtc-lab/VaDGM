@@ -1,0 +1,166 @@
+{
+  "tokens": [
+    {
+      "atomic_number": 6,
+      "formal_charge": -1,
+      "total_hydrogens": 1
+    },
+    {
+      "atomic_number": 6,
+      "formal_charge": 0,
+      "total_hydrogens": 0
+    },
+    {
+      "atomic_number": 6,
+      "formal_charge": 0,
+      "total_hydrogens": 1
+    },
+    {
+      "atomic_number": 6,
+      "formal_charge": 0,
+      "total_hydrogens": 2
+    },
+    {
+      "atomic_number": 6,
+      "formal_charge": 0,
+      "total_hydrogens": 3
+    },
+    {
+      "atomic_number": 7,
+      "formal_charge": -1,
+      "total_hydrogens": 0
+    },
+    {
+      "atomic_number": 7,
+      "formal_charge": -1,
+      "total_hydrogens": 1
+    },
+    {
+      "atomic_number": 7,
+      "formal_charge": 0,
+      "total_hydrogens": 0
+    },
+    {
+      "atomic_number": 7,
+      "formal_charge": 0,
+      "total_hydrogens": 1
+    },
+    {
+      "atomic_number": 7,
+      "formal_charge": 0,
+      "total_hydrogens": 2
+    },
+    {
+      "atomic_number": 7,
+      "formal_charge": 1,
+      "total_hydrogens": 0
+    },
+    {
+      "atomic_number": 7,
+      "formal_charge": 1,
+      "total_hydrogens": 1
+    },
+    {
+      "atomic_number": 7,
+      "formal_charge": 1,
+      "total_hydrogens": 2
+    },
+    {
+      "atomic_number": 7,
+      "formal_charge": 1,
+      "total_hydrogens": 3
+    },
+    {
+      "atomic_number": 8,
+      "formal_charge": -1,
+      "total_hydrogens": 0
+    },
+    {
+      "atomic_number": 8,
+      "formal_charge": 0,
+      "total_hydrogens": 0
+    },
+    {
+      "atomic_number": 8,
+      "formal_charge": 0,
+      "total_hydrogens": 1
+    },
+    {
+      "atomic_number": 8,
+      "formal_charge": 1,
+      "total_hydrogens": 0
+    },
+    {
+      "atomic_number": 8,
+      "formal_charge": 1,
+      "total_hydrogens": 1
+    },
+    {
+      "atomic_number": 9,
+      "formal_charge": 0,
+      "total_hydrogens": 0
+    },
+    {
+      "atomic_number": 15,
+      "formal_charge": 0,
+      "total_hydrogens": 0
+    },
+    {
+      "atomic_number": 15,
+      "formal_charge": 0,
+      "total_hydrogens": 1
+    },
+    {
+      "atomic_number": 15,
+      "formal_charge": 0,
+      "total_hydrogens": 2
+    },
+    {
+      "atomic_number": 15,
+      "formal_charge": 1,
+      "total_hydrogens": 0
+    },
+    {
+      "atomic_number": 16,
+      "formal_charge": -1,
+      "total_hydrogens": 0
+    },
+    {
+      "atomic_number": 16,
+      "formal_charge": 0,
+      "total_hydrogens": 0
+    },
+    {
+      "atomic_number": 16,
+      "formal_charge": 0,
+      "total_hydrogens": 1
+    },
+    {
+      "atomic_number": 16,
+      "formal_charge": 1,
+      "total_hydrogens": 0
+    },
+    {
+      "atomic_number": 16,
+      "formal_charge": 1,
+      "total_hydrogens": 1
+    },
+    {
+      "atomic_number": 17,
+      "formal_charge": 0,
+      "total_hydrogens": 0
+    },
+    {
+      "atomic_number": 35,
+      "formal_charge": 0,
+      "total_hydrogens": 0
+    },
+    {
+      "atomic_number": 53,
+      "formal_charge": 0,
+      "total_hydrogens": 0
+    }
+  ],
+  "mask_id": 32,
+  "pad_id": 33
+}

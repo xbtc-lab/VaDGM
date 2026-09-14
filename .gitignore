@@ -1,0 +1,41 @@
+﻿# Python & Byte-code
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Virtual Environments
+.venv/
+env/
+venv/
+
+# Large Datasets & Caches (Keep vocabulary/manifest, exclude raw/cache)
+data/raw/
+data/cache/
+*.h5
+*.lmdb
+*.pkl
+source_cache/
+
+# Model Checkpoints (Hosted via GitHub Releases, exclude heavy binaries)
+artifacts/
+checkpoints/
+*.pt
+*.pth
+*.ckpt
+
+# Output results & Logs (Keep paper source_data, exclude heavy generated samples)
+logs/
+results/runs/
+results/samples/
+*.part
+*.log
+
+# IDE & OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

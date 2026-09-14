@@ -1,0 +1,33 @@
+# Figure 3：跨 Q50/Q80/Q90 的生成效果与性质控制。
+experiment: figure3
+seeds: [2027, 2028, 2029]
+
+settings:
+  samples: 10000
+  batch_size: 128
+  device: cuda
+  overwrite: false
+
+paths:
+  source: data/raw/zinc250k.csv
+  manifest: data/processed/zinc100k_v1/manifest.csv
+  vocabulary: data/processed/zinc100k_v1/atom_vocabulary.json
+  source_cache: data/source_cache/logp_q80.jsonl
+  base_checkpoint: artifacts/base/best.pt
+  base_config: configs/base.yaml
+  data_config: configs/data.yaml
+  sampler_config: configs/sampling.yaml
+  output_dir: results/runs/paper/figure3
+
+targets:
+  q50:
+    guidance_checkpoint: artifacts/guidance/logp_q50_best.pt
+    guidance_config: configs/guidance_q50.yaml
+  q80:
+    # Q80 完整 VaDGM 已由 Table 1 生成，严格复用，避免重复采样。
+    reuse_output_pattern: results/runs/paper/table1/vadgm_q80_seed{seed}.json
+    reuse_experiment: table1
+    reuse_condition: q80
+  q90:
+    guidance_checkpoint: artifacts/guidance/logp_q90_best.pt
+    guidance_config: configs/guidance_q90.yaml

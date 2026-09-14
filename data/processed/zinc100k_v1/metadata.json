@@ -1,0 +1,18 @@
+{
+  "protocol_version": "zinc100k-v2-token-covered-split",
+  "source_path": "F:\\paper\\P7_icassp\\src\\data\\raw\\zinc250k.csv",
+  "source_sha256": "35e3f1a52b1badc0697e373d73a18ad773f415936ff992f4c6baa2e067b3e6ae",
+  "config_hash": "5d8b731b1717e06e268ac603edef0956e00bc9a501a5138d2f502357c72d6742",
+  "seen_rows": 249455,
+  "accepted_unique": 247804,
+  "rejected_rows": 0,
+  "duplicate_rows": 1651,
+  "selected_rows": 100000,
+  "split_counts": {
+    "train": 80000,
+    "validation": 10000,
+    "test": 10000
+  },
+  "manifest_sha256": "0c23166887a00690559b078133996728413bae84576cbc00d71c8cbbf2311151",
+  "vocabulary_sha256": "d03b911c6c352e1afeb9b76103f4e3406452628247b5e56e69dc0e27812b9ed6"
+}

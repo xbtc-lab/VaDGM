@@ -1,0 +1,12 @@
+seed: 2027
+delta_s: 0.25
+samples: 10000
+batch_size: 128
+device: cuda
+record_event_plan: false
+record_event_trace: false
+record_joint_conflict: true
+terminal_reachability:
+  enabled: true
+  relax_on_empty: true
+  defer_atom_commit: false

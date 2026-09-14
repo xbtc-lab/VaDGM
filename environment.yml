@@ -1,0 +1,16 @@
+﻿name: vadgm
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - pip
+  - pip:
+      - torch>=2.0.0
+      - rdkit-pypi>=2022.9.5
+      - numpy>=1.26,<2
+      - pyyaml>=6.0
+      - tqdm>=4.66
+      - matplotlib>=3.8
+      - pytest>=8.0
