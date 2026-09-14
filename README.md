@@ -1,11 +1,10 @@
-﻿# VaDGM: Valence-Aware Discrete Guidance Matching for Property-Targeted Molecular Graph Generation
+# VaDGM: Valence-Aware Discrete Guidance Matching for Property-Targeted Molecular Graph Generation
 
 [![Python 3.11](https://img.shields.io/badge/python-3.11-blue.svg)](https://www.python.org/downloads/release/python-3110/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.1%2B-orange.svg)](https://pytorch.org/)
-[![Conference](https://img.shields.io/badge/IEEE-ICASSP%202027-red.svg)](https://2027.ieeeicassp.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-Official PyTorch implementation of the paper **"VaDGM: Valence-Aware Discrete Guidance Matching for Property-Targeted Molecular Graph Generation"** (IEEE ICASSP 2027).
+Official PyTorch implementation of the paper **"VaDGM: Valence-Aware Discrete Guidance Matching for Property-Targeted Molecular Graph Generation"**.
 
 ---
 
@@ -167,22 +166,6 @@ The repository includes a comprehensive test suite covering molecular graph code
 pytest -q
 ```
 *(All 84 tests pass cleanly)*.
-
----
-
-## Citation
-
-If you find VaDGM useful in your research, please cite our paper:
-
-```bibtex
-@inproceedings{xiong2027vadgm,
-  author    = {Bin Xiong and Xingjie Zeng and Cheng Zhong and Xi Cheng and Cheng Shi and Hans-Arno Jacobsen},
-  title     = {{VaDGM}: Valence-Aware Discrete Guidance Matching for Property-Targeted Molecular Graph Generation},
-  booktitle = {Proc. IEEE Int. Conf. Acoust., Speech Signal Process. (ICASSP)},
-  year      = {2027},
-  pages     = {1--5}
-}
-```
 
 ---
 
